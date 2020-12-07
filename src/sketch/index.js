@@ -16,9 +16,11 @@ export default function sketch(s) {
 
   s.draw = () => {
     s.background(200);
-    s.rotateX(180);
-    s.rotateY(130);
+    s.rotateX(-180);
+    s.rotateY(s.frameCount * -0.1);
+//    s.rotateY(s.mouseX * -0.5);
     s.normalMaterial(); // For effect
     s.model(teapot);
   };
+    
 }
